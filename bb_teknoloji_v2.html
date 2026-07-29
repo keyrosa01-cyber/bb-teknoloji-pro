@@ -600,7 +600,7 @@
             window.giderler.forEach(g => { if (g.odemeYontemi === 'Nakit' || !g.odemeYontemi) nakitKasa -= Number(g.tutar); });
             const el = document.getElementById('statKasaNakit');
             if(el) { el.innerText = `${nakitKasa.toLocaleString('tr-TR', {minimumFractionDigits:2})} ₺`; el.style.color = nakitKasa >= 0 ? '#34d399' : '#f87171'; }
-        };
+      
 
         window.girisYap = function() {
             const user = turkceKucukHarf(document.getElementById('loginUser').value.trim());
